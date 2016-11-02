@@ -18,13 +18,12 @@ Configure the Api Stats Filter through your Web.config:
     
 For configuration for IIS 7 and above running in Integrated Mode, add this entry to initialize the HttpModule.  Keep in mind the type attribute is pertinent to this project's namespace and class.
 
-<configuration>
   <system.webServer>
     <modules>      
       <add name="ApiFilter" type="Api-Stats-Client.ApiFilter, ApiFilter" />
     </modules>
    </system.webServer>
-</configuration>
+
 
 Configuration Options
 _____________________
