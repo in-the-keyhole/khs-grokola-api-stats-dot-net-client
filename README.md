@@ -17,12 +17,12 @@ Configure the Api Stats Filter through your Web.config:
     <add key="sleep" value="5000"/>
     
 For configuration for IIS 7 and above running in Integrated Mode, add this entry to initialize the HttpModule.  Keep in mind the type attribute is pertinent to this project's namespace and class.
-
-<system.webServer>
-    <modules>      
-      <add name="ApiFilter" type="Api-Stats-Client.ApiFilter, ApiFilter" />
-    </modules>
-</system.webServer>  
+    
+    <system.webServer>
+        <modules>      
+            <add name="ApiFilter" type="Api-Stats-Client.ApiFilter, ApiFilter" />
+        </modules>
+    </system.webServer>  
 
 Configuration Options
 _____________________
